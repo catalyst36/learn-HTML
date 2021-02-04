@@ -1,11 +1,84 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>WELCOME</title>
-        <meta charset="utf-8">
-    </head>
-
-    <body>
-        <h1>어서오세요!</h1>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>윤곽성 프로그래밍</title>
+    <style>
+        a{text-decoration: none;}
+        #main_title{
+            text-align:center;
+            font-size: 45px;
+            color:#fff;
+            height: 150px;
+            padding-top: 70px;
+        }
+        .background-img{
+            background-image: url(./images/main_title.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 2000px;
+            height: 200px;
+        }
+        .title-color{
+            color:#fff;
+        }
+        .page-explain{
+            text-align: center;
+            border: 3px solid gray;
+            margin:auto;
+            margin-top:40px;
+            width:720px;
+            padding:10px;
+        }
+        .main-nav{
+            width:1000px;
+            display:flex;
+            text-transform: uppercase;
+            list-style: none;
+            justify-content:space-around;
+            margin:auto;
+            margin-top: 70px;
+            margin-bottom: 200px;
+        }
+        .Button{
+            font-size: 30px;
+            color:black;      
+        }
+        .Button:hover{
+            color:dimgray;
+        }
+        footer{
+            background:rgb(116, 160, 160);
+            text-align:center;
+            padding: 26px 0;
+        }
+        footer p{
+            color: #fff;
+            font-size: 0.875rem;
+        }
+        
+    </style>
+</head>
+<body>
+    <header class="background-img">
+        <h1 id="main_title"><a href="index.html" class="title-color">윤곽성 프로그래밍</a></h1>
+    </header>
+        <h4 class="page-explain">
+        2020년 한남대학교 동계 겨울방학 스터디그룹인 윤곽성 프로그래밍에서 만든 웹사이트 입니다.<br>
+        HTML,CSS,JavaScript를 이용해 웹사이트를 개설하고 최종적으로 github를 이용해 어느 pc에서든 이 사이트에 들어올 수 있게 만드는것이 목표입니다.
+        </h4>
+    <nav>
+        <ul class="main-nav">
+            <li><a href="HTML.html" class="Button">HTML</a></li>
+            <li><a href="CSS.html" class="Button">CSS</a></li>
+            <li><a href="PROJECT.html" class="Button">PROJECT</a></li>
+        </ul>
+    </nav>
+    <footer>
+        <div class="wrapper">
+            <p><small>&copy;한남대학교 동계 스터디 윤곽성 프로그래밍</small></p>
+        </div>
+    </footer>
+</body>
 </html>
